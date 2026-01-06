@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Habit Sync Analytics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>HABIT ANALYTICS</h1>
+    <p class="subtitle">Track your daily Habits and see progress</p><hr>
+  </header>
+
+  <main class="container">
+    <!-- Habits Grid -->
+    <section class="habits-grid">
+      <!-- Drink Water -->
+      <article class="card" id="habit-water">
+        <div class="card-head">
+          <h2>Drink Water</h2>
+          <span class="target">Target: 8 glasses/day</span>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar" id="water-progress"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="water-count">0</span> / 8 glasses
+        </div>
+
+        <div class="controls">
+          <button class="btn" id="water-add">Log 1 glass</button>
+          <button class="btn btn-secondary" id="water-sub">Undo</button>
+        </div>
+
+        <div class="meta-row">
+          <div class="meta-item">
+            <strong>Streak:</strong> <span id="water-streak">0</span> days
+          </div>
+          <div class="meta-item">
+            <strong>Last log:</strong> <span id="water-lastlog">—</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Read Book -->
+      <article class="card" id="habit-read">
+        <div class="card-head">
+          <h2>Read Book</h2>
+          <span class="target">Target: 30 minutes/day</span>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar" id="read-progress"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="read-minutes">0</span> / 30 minutrs
+        </div>
+
+        <div class="controls">
+          <div class="inline-input">
+            <input type="number" min="1" step="1" id="read-input" placeholder="Enter minutes" />
+            <button class="btn" id="read-add">Log minutes</button>
+          </div>
+          <button class="btn btn-secondary" id="read-reset">Undo last</button>
+        </div>
+
+        <div class="meta-row">
+          <div class="meta-item">
+            <strong>Streak:</strong> <span id="read-streak">0</span> days
+          </div>
+          <div class="meta-item">
+            <strong>Last log:</strong> <span id="read-lastlog">—</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Morning Run -->
+      <article class="card" id="habit-run">
+        <div class="card-head">
+          <h2>Morning Run</h2>
+          <span class="target">Target: 5 km/day</span>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar" id="run-progress"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="run-km">0</span> / 5 km
+        </div>
+
+        <div class="controls">
+          <div class="inline-input">
+            <input type="number" min="0.1" step="0.1" id="run-input" placeholder="Enter km" />
+            <button class="btn" id="run-add">Log distance</button>
+          </div>
+          <button class="btn btn-secondary" id="run-reset">Undo last</button>
+        </div>
+
+        <div class="meta-row">
+          <div class="meta-item">
+            <strong>Streak:</strong> <span id="run-streak">0</span> days
+          </div>
+          <div class="meta-item">
+            <strong>Last log:</strong> <span id="run-lastlog">—</span>
+          </div>
+        </div>
+      </article>
+    </section>
+       <!-- Suggestions -->
+    <section class="suggestions">
+      <h3>Suggestions to maximize use</h3>
+      <ul>
+        <li><strong>Set reminders:</strong> Pair with notifications so you don’t forget to log.</li>
+        <li><strong>Track streaks:</strong> Celebrate consecutive days meeting targets.</li>
+        <li><strong>Visual progress:</strong> Weekly/monthly charts help you see trends.</li>
+      </ul>
+    </section>
+
+    <!-- Day Controls -->
+    <section class="day-controls">
+      <button class="btn btn-danger" id="reset-day">Reset</button>
+      <button class="btn btn-outline" id="clear-all">Clear all data</button>
+    </section>
+    <hr>
+  </main>
+
+  <footer class="app-footer">
+    <p>Built for daily consistency — keep going.</p>
+    <p>© 2026 BeLeaf. All rights reserved.</p>
+        <div class="socials">
+      <p><span>🌐 </span>
+            <span>🅾</span></p>
+  </footer>
+
+  <script src="Habits.js"></script>
+</body>
+</html>

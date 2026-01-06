@@ -1,0 +1,109 @@
+.bar{
+    height: 70px;
+    width: 100%;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: end;
+    border-radius: 10px;
+}
+.home ,.back{
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    padding: auto;
+    margin: 20px;
+    background-color: #7096D1;
+    border: 2px solid #18191a;
+    box-shadow: 0 4px 12px rgba(16, 42, 67, 0.18);
+    position: sticky;
+    top: 2px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+.features {
+    padding: 40px 20px;
+    background-color:#7096D1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(16, 42, 67, 0.18);
+    position: sticky;
+    top: 5px;
+    height:400px;
+}
+
+.feature-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.feature {
+    background: linear-gradient(135deg, #D0E3FF 0%, #7096D1 100%);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.feature h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.icon01, .icon02, .icon03, .icon04 {
+    font-size: 48px;
+}
+footer {
+    border-top: 1px solid rgba(16, 42, 67, 0.15);
+    padding: 1rem;
+    text-align: center;
+    color: #243b53;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+}
+
+.socials {
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    .body > div {
+        padding: 1.1rem;
+    }
+
+    .body h2 {
+        font-size: 1.7rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+}

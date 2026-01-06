@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #7096D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #D0E3FF;
+    border-radius: 10px;
+    padding: 30px;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(60, 124, 196);
+}
+label{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+input{
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px ;
+}
+.button{
+    width:500px;
+    height:30px;
+}
